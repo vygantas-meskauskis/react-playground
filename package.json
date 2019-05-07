@@ -1,4 +1,5 @@
 {
+  "homepage": "https://vygantas-meskauskis.github.io/react-playground",
   "name": "new-project",
   "version": "0.1.0",
   "description": "",
@@ -7,6 +8,8 @@
     "npm": ">=3"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "preinstall": "node tools/nodeVersionCheck.js",
     "remove-demo": "babel-node tools/removeDemo.js",
     "start-message": "babel-node tools/startMessage.js",
@@ -32,6 +35,7 @@
   "license": "MIT",
   "dependencies": {
     "connected-react-router": "4.4.1",
+    "gh-pages": "2.0.1",
     "object-assign": "4.1.1",
     "react": "16.4.2",
     "react-dom": "16.4.2",
